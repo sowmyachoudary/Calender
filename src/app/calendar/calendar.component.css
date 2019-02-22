@@ -1,0 +1,48 @@
+div  {
+  /** Для эксплорера */
+  -ms-user-select: none;
+  /** Для мозилы */
+  -moz-user-select: none;
+  /** Для конкверора */
+  -khtml-user-select: none;
+  /**Для Сафари и Хрома */
+  -webkit-user-select: none;
+}
+div.inner {
+  display: inline-table;
+  width: 350px;
+}
+.cells, .week {
+  display: inline-table;
+  width: 50px;
+  flex-wrap: wrap;
+  padding: 5px;
+  border: 2px groove lightgray;
+  text-align: center;
+  cursor: pointer;
+}
+.week {
+  background: gray;
+  color: white;
+  cursor: default;
+}
+div.cells.prev, div.cells.foll {
+  background: lightgrey;
+  color: darkgrey;
+}
+div.cells:hover {
+  background: black;
+  color: white;
+}
+div.name-date {
+  border: 2px groove lightgray;
+  text-align: center;
+  width: 350px;
+  cursor: pointer;
+  background: gray;
+  color: white;
+}
+div.name-date:hover {
+  background: black;
+  color: white;
+}
